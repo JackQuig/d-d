@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Labour Slave</name>
+		<description>Labour Slave Background</description>
+		<author url="http://thotep.co.uk">T'Ho'Tep</author>
+		<update version="0.1.0">
+			<file name="background-labour-slave.xml" url="https://raw.githubusercontent.com/JackQuig/d-d/master/background-labour-slave.xml" />
+		</update>
+	</info>
+
+	<element name="Labour Slave" type="Background" source="Custom: T'Ho'Tep" id="ID_THOTEP_BACKGROUND_LABOUR_SLAVE">
+		<description>
+			<p>Captured and imprisoned by a group of nefarious people. Due to either deception or actual skill, you convince them to keep you alive as you could be useful. After spending a significant amount of time as a prisoner you break free or are released. With a new found appreciation of your own freedom will you seek vengeance or seek to help others having been in peril yourself.</p>
+			<ul class="unstyled">
+				<li> <strong>Skill Proficiencies:</strong> Two of your choice: Animal Handling, Athletics, Deception, Performance, Survival.</li>
+				<li> <strong>Tool Proficiencies:</strong> Your choice of an artisan tool or a musical instrument</li>
+				<li> <strong>Languages:</strong> Any one of your choice</li>
+				<li> <strong>Equipment:</strong> Tool or instrument of your trade, a set of common clothes.</li>
+			</ul>
+			<div element="ID_THOTEP_BACKGROUND_FEATURE_LABOUR_SLAVE_DUTIES" />
+			<h5>DUTIES</h5>
+			<table>
+				<thead>
+					<tr> <td>d4</td> <td>Enslaved Duty</td> </tr>
+				</thead>
+				<tr> <td>1</td> <td>Musical Entertainer</td> </tr>
+				<tr> <td>2</td> <td>Construction</td> </tr>
+				<tr> <td>3</td> <td>Animal Carer</td> </tr>
+				<tr> <td>4</td> <td>Skilled Labour</td> </tr>
+			</table>
+			<h5>SUGGESTED CHARACTERISTICS</h5>
+			<p>Having spent a significant amount of time in captivity, you are a changed person. You may of developed a lot of anger and hatred. Or you might now have a new love for the world and everyone in it. You may of forgotten things you used to hold valuable, or they may be the only thing that kept you sane.</p>
+		</description>
+		<setters>
+			<set name="short">Animal Handling / Athletics / Deception / Performance / Survival, Tool Proficiency Set or Instrument, Language</set>
+		</setters>
+		<rules>
+			<select type="Proficiency" name="Skill Proficiency (Labour Slave)" supports="ID_PROFICIENCY_SKILL_ANIMALHANDLING|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_PERFORMANCE|ID_PROFICIENCY_SKILL_SURVIVAL" />
+<select type="Proficiency" name="Skill Proficiency (Labour Slave)" supports="ID_PROFICIENCY_SKILL_ANIMALHANDLING|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_PERFORMANCE|ID_PROFICIENCY_SKILL_SURVIVAL" />
+			<select type="Proficiency" name="Tool or Musical Instrument" supports="Musical Instrument||Artisan tools" />
+			<select type="Language" name="Language (Inheritor)" supports="Standard||Exotic" />
+			<grant type="Background Feature" id="ID_THOTEP_BACKGROUND_FEATURE_LABOUR_SLAVE_DUTIES" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE" />
+			<select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+			<select name="Personality Trait" type="List" number="2">
+				                <item id="1">Others will suffer as I have.</item>
+                <item id="2">I will have vengeance on the ones who imprisoned me.</item>
+                <item id="3">My freedom has made me appreciate the beauty in the world.</item>
+                <item id="4">No one should suffer as I have.</item>
+                <item id="5">I am owed a great debt due to my years of imprisonment. I will take what I am owed from anyone.</item>
+                <item id="6">I will not be captured again. I would rather die.</item>
+                <item id="7">I am used to being told what to do.</item>
+                <item id="8">No one controls me anymore.</item>
+			</select>
+			<select name="Ideal" type="List">
+                <item id="1">Loss: I freely give those who offend me what was so brutally denied me, death. (Chaos)</item>
+                <item id="2">Dedication: I never betray those who trust me. (Law)</item>
+                <item id="3">Vengeance: People will pay for my imprisonment. It does not matter who. (Evil)</item>
+                <item id="4">Redemption: Everyone deserves a second chance. (Good)</item>
+                <item id="5">Resilience: I can survive any challenge. (Any)</item>
+                <item id="6">Leadership: Everyone has an equal say.</item>
+			</select>
+			<select name="Bond" type="List">
+                <item id="1">I take up arms to help establish a free world.</item>
+                <item id="2">The horrors of my time in imprisonment haunt my dreams, only after a day of hard work can I find sleep.</item>
+                <item id="3">I am indebted to those who freed me from prison, I will repay this debt.</item>
+                <item id="4">My torturer survived the attack that set me free, I will find him/her.</item>
+                <item id="5">I will not rest while others suffer fates similar to mine.</item>
+                <item id="6">I am searching for a way to heal myself, both physically and emotionally.</item>			</select>
+			<select name="Flaw" type="List">
+                <item id="1">I follow orders too readily.</item>
+                <item id="2">I fear to act sometimes when I know I should.</item>
+                <item id="3">I undervalue myself.</item>
+                <item id="4">I folded under the torture, and gave information that I promised would be kept secret. My life would be in jeopardy if others found out.</item>
+                <item id="5">Survival is worth more than friendship.</item>
+                <item id="6">The ghosts from my past hinder my actions.</item>
+			</select>
+		</rules>
+	</element>
+
+	<element name="Feature: Labour Slave" type="Background Feature" source="Custom: T'Ho'Tep" id="ID_THOTEP_BACKGROUND_FEATURE_LABOUR_SLAVE_DUTIES">
+		<supports>Background Feature</supports>
+		<description>
+            <p>Meek and unassuming, you are able to blend in the background by appearing unimportant.</p>			
+<p class="indent">Due to your years of enslavement, you able to identidy other people in enslavement.</p>
+		</description>
+		<sheet name="Slave" />
+	</element>
+</elements>
