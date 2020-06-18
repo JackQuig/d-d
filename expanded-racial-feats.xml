@@ -5,7 +5,7 @@
         <description>Racial feats for more races</description>
         <author url="https://i.4pcdn.org/tg/1515866457192.pdf">Expanded Racial Feats</author>
         <update version="0.0.0">
-            <file name="expanded-racial-feats.xml" url="https://raw.githubusercontent.com/"/>
+            <file name="expanded-racial-feats.xml" url="https://raw.githubusercontent.com/JackQuig/d-d/master/expanded-racial-feats.xml"/>
         </update>
     </info>
     <element name="Tortle Protector" type="Feat" source="Expanded Racial Feats" id="ID_WOTC_ERF_FEAT_TORTLE_PROTECTOR">
