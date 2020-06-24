@@ -36,12 +36,10 @@
 			<set name="short">Animal Handling / Athletics / Deception / Performance / Survival, Tool Proficiency Set or Instrument, Language</set>
 		</setters>
 		<rules>
-			<select type="Proficiency" name="Skill Proficiency (Labour Slave)" supports="ID_PROFICIENCY_SKILL_ANIMALHANDLING|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_PERFORMANCE|ID_PROFICIENCY_SKILL_SURVIVAL" />
-<select type="Proficiency" name="Skill Proficiency (Labour Slave)" supports="ID_PROFICIENCY_SKILL_ANIMALHANDLING|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_PERFORMANCE|ID_PROFICIENCY_SKILL_SURVIVAL" />
-			<select type="Proficiency" name="Tool or Musical Instrument" supports="Musical Instrument||Artisan tools" />
-			<select type="Language" name="Language (Inheritor)" supports="Standard||Exotic" />
+			<select type="Proficiency" name="Skill Proficiency (Labour Slave)" number="2" supports="ID_PROFICIENCY_SKILL_ANIMALHANDLING|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_DECEPTION|ID_PROFICIENCY_SKILL_PERFORMANCE|ID_PROFICIENCY_SKILL_SURVIVAL" />
+			<select type="Proficiency" name="Tool or Musical Instrument (Labour Slave)" supports="Musical Instrument||Artisan tools" />
+			<select type="Language" name="Language (Labour Slave)" supports="Standard||Exotic" />
 			<grant type="Background Feature" id="ID_THOTEP_BACKGROUND_FEATURE_LABOUR_SLAVE_DUTIES" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE" />
-			<select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
 			<select name="Personality Trait" type="List" number="2">
 				                <item id="1">Others will suffer as I have.</item>
                 <item id="2">I will have vengeance on the ones who imprisoned me.</item>
