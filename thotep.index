@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<info>
+		<name>T'Ho'Tep's Scraps</name>
+		<description>Content made by T'Ho'Tep the impulsive lizard barbarian.</description>
+		<author url="http://thotep.co.uk">T'Ho'Tep</author>
+		<update version="0.2.0">
+			<file name="thotep.index" url="https://raw.githubusercontent.com/JackQuig/d-d/master/thotep.index" />
+		</update>
+	</info>
+	<files>
+		<file name="thotep.xml" url="https://raw.githubusercontent.com/JackQuig/d-d/master/thotep.xml" />
+	</files>
+</index>
