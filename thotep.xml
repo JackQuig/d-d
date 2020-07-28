@@ -115,7 +115,7 @@
 			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_NATURE" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_JEWELERS_TOOLS" />
-			<select type="Language" name="Language (Clan Crafter)" supports="Standard||Exotic" default="ID_LANGUAGE_DWARVISH" default-behaviour="force" />
+			<select type="Language" name="Language (Mineral Enthusiast)" supports="Standard||Exotic" default="ID_LANGUAGE_DWARVISH" default-behaviour="force" />
 			<grant type="Background Feature" id="ID_THOTEP_BACKGROUND_FEATURE_MINERAL_ENTHUSIAST_FAVOURITES" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE" />
 			<select name="Personality Trait" type="List" number="2">
 				<item id="1">Minerals tell us the history of the land.</item>
@@ -162,4 +162,25 @@
 		</description>
 		<sheet name="Geologist" />
 	</element>
+
+			<element name="Custom" type="Background" source="T'Ho'Tep's Scraps" id="ID_THOTEP_BACKGROUND_CUSTOM">
+		<description>
+			<p>Make your own background</p>
+			<ul class="unstyled">
+				<li> <strong>Skill Proficiencies:</strong> Any 2.</li>
+				<li> <strong>Tool Proficiencies:</strong> Any 0, 1 or 2.</li>
+				<li> <strong>Languages:</strong> Any 0, 1 or 2.</li>
+				<li> <strong>Equipment:</strong> Anything.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="short">Fully customizable.</set>
+		</setters>
+		<rules>
+			<select type="Proficiency" name="Skill Proficiency (Custom)" supports="Skill" number="2" />
+			<select type="Proficiency" name="Tool Proficiency (Custom)" supports="Tool" number="2" optional="true"/>
+			<select type="Language" name="Language (Custom)" number="2" optional="true" />
+		</rules>
+	</element>
+
 </elements>
