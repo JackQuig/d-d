@@ -11,7 +11,7 @@
 
 	<element name="Labour Slave" type="Background" source="T'Ho'Tep's Scraps" id="ID_THOTEP_BACKGROUND_LABOUR_SLAVE">
 		<description>
-			<p>Captured and imprisoned by a group of nefarious people. Due to either deception or actual skill, you convince them to keep you alive as you could be useful. After spending a significant amount of time as a prisoner you break free or are released. With a new found appreciation of your own freedom will you seek vengeance or seek to help others having been in peril yourself.</p>
+			<p>Captured and imprisoned by a group of nefarious people. Due to either deception or actual skill, you convince them to keep you alive as you could be useful. After spending a significant amount of time as a prisoner you break free or are released. With a new found appreciation of your own freedom, will you seek vengeance or seek to help others having been in peril yourself?</p>
 			<ul class="unstyled">
 				<li> <strong>Skill Proficiencies:</strong> Two of your choice: Animal Handling, Athletics, Deception, Performance, Survival.</li>
 				<li> <strong>Tool Proficiencies:</strong> Your choice of an artisan tool or a musical instrument</li>
